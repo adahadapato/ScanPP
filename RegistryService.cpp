@@ -1,5 +1,5 @@
-#include "/Projects/C++Projects/ScanPP/RegistryService.h"
-#include "RegistryHelper.h"
+#include "RegistryService.h"
+
 
 void RegistryService::SetExamType(LPCWSTR value)
 {
