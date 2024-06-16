@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\RegistryHLP.cpp">
+    <ClCompile Include="..\ScanW_bad\RegistryHelper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\App.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Directory.cpp">
+    <ClCompile Include="..\ScanW_bad\DirectoryService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\HTTPClient.cpp">
@@ -33,27 +33,30 @@
     <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\MainWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Schools.cpp">
+    <ClCompile Include="..\ScanW_bad\SchoolService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\States.cpp">
+    <ClCompile Include="..\ScanW_bad\StateService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Subjects.cpp">
+    <ClCompile Include="..\ScanW_bad\SubjectService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RegistryService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StorageService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\RegistryHLP.h">
+    <ClInclude Include="..\ScanW_bad\RegistryHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\App.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Directory.h">
+    <ClInclude Include="..\ScanW_bad\DirectoryService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\HTTPClient.h">
@@ -65,16 +68,19 @@
     <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\MainWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Schools.h">
+    <ClInclude Include="..\ScanW_bad\SchoolService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\States.h">
+    <ClInclude Include="..\ScanW_bad\StateService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Subjects.h">
+    <ClInclude Include="..\ScanW_bad\SubjectService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RegistryService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StorageService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

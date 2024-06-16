@@ -8,8 +8,7 @@
 #define REGISTRY_NECOSCAN_SUBKEY_EXAMTYPE TEXT("ExamType")
 #define REGISTRY_NECOSCAN_SUBKEY_LOGOUT TEXT("Logout")
 
-
-class RegistryService
+class StorageService
 {
 public:
 	void SetExamType(LPCWSTR value);
@@ -18,6 +17,5 @@ public:
 	void SetExamYear(LPCWSTR value);
 	std::string GetLogOut();
 	void SetLogOut(LPCWSTR value);
-	//std::string 
 };
 

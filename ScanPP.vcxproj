@@ -132,27 +132,39 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\App.cpp" />
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Directory.cpp" />
+    <ClCompile Include="..\ScanW_bad\DirectoryService.cpp" />
     <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\HTTPClient.cpp" />
     <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\LoginWindow.cpp" />
     <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\MainWindow.cpp" />
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\RegistryHLP.cpp" />
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Schools.cpp" />
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\States.cpp" />
-    <ClCompile Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Subjects.cpp" />
+    <ClCompile Include="..\ScanW_bad\RegistryHelper.cpp" />
+    <ClCompile Include="..\ScanW_bad\SchoolService.cpp" />
+    <ClCompile Include="..\ScanW_bad\StateService.cpp" />
+    <ClCompile Include="..\ScanW_bad\SubjectService.cpp" />
     <ClCompile Include="RegistryService.cpp" />
+    <ClCompile Include="StorageService.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\App.h" />
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Directory.h" />
+    <ClInclude Include="..\ScanW_bad\DirectoryService.h" />
     <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\HTTPClient.h" />
     <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\LoginWindow.h" />
     <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\MainWindow.h" />
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\RegistryHLP.h" />
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Schools.h" />
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\States.h" />
-    <ClInclude Include="..\..\..\..\..\Projects\C++Projects\ScanW_bad\Subjects.h" />
+    <ClInclude Include="..\ScanW_bad\RegistryHelper.h" />
+    <ClInclude Include="..\ScanW_bad\SchoolService.h" />
+    <ClInclude Include="..\ScanW_bad\StateService.h" />
+    <ClInclude Include="..\ScanW_bad\SubjectService.h" />
     <ClInclude Include="RegistryService.h" />
+    <ClInclude Include="StorageService.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

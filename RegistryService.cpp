@@ -1,9 +1,9 @@
-#include "RegistryService.h"
-
+#include "/Projects/C++Projects/ScanPP/RegistryService.h"
+#include "RegistryHelper.h"
 
 void RegistryService::SetExamType(LPCWSTR value)
 {
-	RegistryHLP* _regHelper = new RegistryHLP();
+	RegistryHelper* _regHelper = new RegistryHelper();
 	// user is logged in and destroy form login
 	BOOL status = _regHelper->WriteStringToRegistry(HKEY_CURRENT_USER, REGISTRY_NECOSCAN, REGISTRY_NECOSCAN_SUBKEY_EXAMTYPE, value); //write exams type to registry
 	delete(_regHelper);
@@ -13,7 +13,7 @@ std::string RegistryService::GetExamType()
 {
 	PWCHAR readMessage = nullptr;
 	std::string regValue{};
-	RegistryHLP* _regHelper = new RegistryHLP();
+	RegistryHelper* _regHelper = new RegistryHelper();
 	BOOL status = _regHelper->ReadStringFromRegistry(HKEY_CURRENT_USER, REGISTRY_NECOSCAN, REGISTRY_NECOSCAN_SUBKEY_EXAMTYPE, &readMessage); //read string
 	if (status == TRUE)
 	{
@@ -33,7 +33,7 @@ std::string RegistryService::GetExamYear()
 {
 	PWCHAR readMessage = nullptr;
 	std::string regValue{};
-	RegistryHLP* _regHelper = new RegistryHLP();
+	RegistryHelper* _regHelper = new RegistryHelper();
 	BOOL status = _regHelper->ReadStringFromRegistry(HKEY_CURRENT_USER, REGISTRY_NECOSCAN, REGISTRY_NECOSCAN_SUBKEY_EXAMYEAR, &readMessage); //read string
 	if (status == TRUE)
 	{
@@ -51,7 +51,7 @@ std::string RegistryService::GetExamYear()
 
 void RegistryService::SetExamYear(LPCWSTR value)
 {
-	RegistryHLP* _regHelper = new RegistryHLP();
+	RegistryHelper* _regHelper = new RegistryHelper();
 	// user is logged in and destroy form login
 	BOOL status = _regHelper->WriteStringToRegistry(HKEY_CURRENT_USER, REGISTRY_NECOSCAN, REGISTRY_NECOSCAN_SUBKEY_EXAMYEAR, value); //write exams type to registry
 	delete(_regHelper);
@@ -61,7 +61,7 @@ std::string RegistryService::GetLogOut()
 {
 	PWCHAR readMessage = nullptr;
 	std::string regValue{};
-	RegistryHLP* _regHelper = new RegistryHLP();
+	RegistryHelper* _regHelper = new RegistryHelper();
 	BOOL status = _regHelper->ReadStringFromRegistry(HKEY_CURRENT_USER, REGISTRY_NECOSCAN, REGISTRY_NECOSCAN_SUBKEY_LOGOUT, &readMessage); //read string
 	if (status == TRUE)
 	{
@@ -79,7 +79,7 @@ std::string RegistryService::GetLogOut()
 
 void RegistryService::SetLogOut(LPCWSTR value)
 {
-	RegistryHLP* _regHelper = new RegistryHLP();
+	RegistryHelper* _regHelper = new RegistryHelper();
 	// user is logged in and destroy form login
 	BOOL status = _regHelper->WriteStringToRegistry(HKEY_CURRENT_USER, REGISTRY_NECOSCAN, REGISTRY_NECOSCAN_SUBKEY_LOGOUT, value); //write exams type to registry
 	delete(_regHelper);
